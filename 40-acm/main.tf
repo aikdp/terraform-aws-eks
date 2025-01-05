@@ -1,7 +1,7 @@
 #Creating Certificate manger ACM
 
 resource "aws_acm_certificate" "expense" {
-  domain_name       = "*.${var.zone_name}"
+  domain_name       = "*.${var.zone_name}"  #  *.telugudevops.online
   validation_method = "DNS"
 
   tags = merge(
